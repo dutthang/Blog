@@ -112,6 +112,21 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent"> Kinh nghiệm và các sai lầm khi code 
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> Dùng == (so sánh lỏng) thay vì === (so sánh nghiêm ngặt) Đây là lỗi cơ bản và phổ biến nhất. Vấn đề: == sẽ cố gắng ép kiểu (type coercion) hai giá trị về chung một kiểu trước khi so sánh. Điều này gây ra các kết quả rất khó lường.
+Ví dụ Lỗi:
+console.log(0 == false); // true (vì 0 bị ép kiểu thành false) console.log(&#34;&#34; == false); // true (vì &#34;&#34; bị ép kiểu thành false) console.log(&#34;10&#34; == 10); // true (vì &#34;10&#34; bị ép kiểu thành số 10) console.log(null == undefined); // true (một trường hợp đặc biệt) Nếu bạn dùng if (value == false) để kiểm tra, bạn có thể nhận kết quả sai khi value là 0 hoặc “”.
+...</p>
+  </div>
+  <footer class="entry-footer"><span>6 min</span></footer>
+  <a class="entry-link" aria-label="post link to  Kinh nghiệm và các sai lầm khi code " href="http://localhost:1313/blog/posts/post/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Bài viết 1 - Biến trong JavaScript
     </h2>
   </header>
