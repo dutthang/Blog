@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 7 - Điều khiển vòng lặp với break & continue trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

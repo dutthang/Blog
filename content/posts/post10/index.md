@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 9 - Sự kiện trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

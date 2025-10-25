@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 3 - Lệnh switch…case trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

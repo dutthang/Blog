@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 5 - Vòng lặp for trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

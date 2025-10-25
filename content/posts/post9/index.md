@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 8 - Hàm trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

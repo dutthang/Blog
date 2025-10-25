@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 4 - Vòng lặp while trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

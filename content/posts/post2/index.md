@@ -1,6 +1,5 @@
 ---
 title: "Bài viết 2 - Lệnh if…else trong JavaScript"
-date: 2025-10-24
 draft: false
 ---
 

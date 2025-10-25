@@ -6,12 +6,11 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài viết 1 - Biến trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post1/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post1/</guid>
       <description>&lt;p&gt;Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.&lt;br&gt;
 Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.&lt;/p&gt;
@@ -22,7 +21,7 @@ Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, 
     <item>
       <title>Bài viết 2 - Lệnh if…else trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post2/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post2/</guid>
       <description>&lt;h1 id=&#34;lệnh-ifelse-trong-javascript&#34;&gt;Lệnh if…else trong JavaScript&lt;/h1&gt;
 &lt;p&gt;Trong khi viết chương trình, đôi khi bạn sẽ gặp tình huống cần chọn một trong nhiều lựa chọn. Khi đó bạn cần sử dụng cấu trúc điều kiện để điều khiển luồng thực thi của chương trình.&lt;/p&gt;
@@ -34,7 +33,7 @@ Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, 
     <item>
       <title>Bài viết 3 - Lệnh switch…case trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post4/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post4/</guid>
       <description>&lt;h1 id=&#34;lệnh-switchcase-trong-javascript&#34;&gt;Lệnh switch…case trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khi-nào-nên-dùng-switchcase&#34;&gt;1. Khi nào nên dùng switch…case?&lt;/h2&gt;
@@ -61,7 +60,7 @@ Từ JavaScript 1.2 trở đi, lệnh &lt;code&gt;switch&lt;/code&gt; được g
     <item>
       <title>Bài viết 4 - Vòng lặp while trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post5/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post5/</guid>
       <description>&lt;h1 id=&#34;vòng-lặp-while-trong-javascript&#34;&gt;Vòng lặp while trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-giới-thiệu&#34;&gt;1. Giới thiệu&lt;/h2&gt;
@@ -78,7 +77,7 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     <item>
       <title>Bài viết 5 - Vòng lặp for trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post6/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post6/</guid>
       <description>&lt;h1 id=&#34;vòng-lặp-for-trong-javascript&#34;&gt;Vòng lặp for trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khi-nào-nên-dùng-vòng-lặp-for&#34;&gt;1. Khi nào nên dùng vòng lặp for?&lt;/h2&gt;
@@ -93,7 +92,7 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     <item>
       <title>Bài viết 6 - Vòng lặp for…in trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post7/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post7/</guid>
       <description>&lt;h1 id=&#34;vòng-lặp-forin-trong-javascript&#34;&gt;Vòng lặp for…in trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khi-nào-dùng-forin&#34;&gt;1. Khi nào dùng &lt;code&gt;for…in&lt;/code&gt;?&lt;/h2&gt;
@@ -108,7 +107,7 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     <item>
       <title>Bài viết 7 - Điều khiển vòng lặp với break &amp; continue trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post8/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post8/</guid>
       <description>&lt;h1 id=&#34;điều-khiển-vòng-lặp-với-break--continue-trong-javascript&#34;&gt;Điều khiển vòng lặp với &lt;code&gt;break&lt;/code&gt; &amp;amp; &lt;code&gt;continue&lt;/code&gt; trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-giới-thiệu&#34;&gt;1. Giới thiệu&lt;/h2&gt;
@@ -122,7 +121,7 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     <item>
       <title>Bài viết 8 - Hàm trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post9/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post9/</guid>
       <description>&lt;h1 id=&#34;hàm-trong-javascript&#34;&gt;Hàm trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khái-niệm-về-hàm&#34;&gt;1. Khái niệm về hàm&lt;/h2&gt;
@@ -133,7 +132,7 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     <item>
       <title>Bài viết 9 - Sự kiện trong JavaScript</title>
       <link>http://localhost:1313/blog/posts/post10/</link>
-      <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/posts/post10/</guid>
       <description>&lt;h1 id=&#34;sự-kiện-trong-javascript&#34;&gt;Sự kiện trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-sự-kiện-là-gì&#34;&gt;1. Sự kiện là gì?&lt;/h2&gt;
@@ -143,7 +142,7 @@ Các phần tử HTML (khi được trình duyệt chuyển thành DOM) &lt;stro
     <item>
       <title>Profile</title>
       <link>http://localhost:1313/blog/profile/</link>
-      <pubDate>Sun, 19 Oct 2025 15:13:49 +0700</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/profile/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/profile/hello.png&#34;&gt;&lt;/p&gt;</description>
     </item>
