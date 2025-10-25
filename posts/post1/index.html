@@ -1,20 +1,238 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Bài viết 1 - Biến trong JavaScript | Blog của tôi</title>
-<meta name=keywords content><meta name=description content="Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Bài viết 1 - Biến trong JavaScript | Blog của tôi</title>
+<meta name="keywords" content="">
+<meta name="description" content="Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.
 Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.
 
 1. Kiểu dữ liệu trong JavaScript
-Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình."><meta name=author content><link rel=canonical href=https://example.org/posts/post1/><link crossorigin=anonymous href=/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn+yY=" rel="preload stylesheet" as=style><link rel=icon href=https://example.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://example.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://example.org/favicon-32x32.png><link rel=apple-touch-icon href=https://example.org/apple-touch-icon.png><link rel=mask-icon href=https://example.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://example.org/posts/post1/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://example.org/posts/post1/"><meta property="og:site_name" content="Blog của tôi"><meta property="og:title" content="Bài viết 1 - Biến trong JavaScript"><meta property="og:description" content="Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.
-Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.
-1. Kiểu dữ liệu trong JavaScript Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-10-24T00:00:00+00:00"><meta property="article:modified_time" content="2025-10-24T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Bài viết 1 - Biến trong JavaScript"><meta name=twitter:description content="Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.
-Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.
+Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/post1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a482bf00fa5c046040ef7973ad5fdf5657890cacb596c93f1382f664ca542074.css" integrity="sha256-pIK/APpcBGBA73lzrV/fVleJDKy1lsk/E4L2ZMpUIHQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/post1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-1. Kiểu dữ liệu trong JavaScript
-Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://example.org/posts/"},{"@type":"ListItem","position":2,"name":"Bài viết 1 - Biến trong JavaScript","item":"https://example.org/posts/post1/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Bài viết 1 - Biến trong JavaScript","name":"Bài viết 1 - Biến trong JavaScript","description":"Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.\nBài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.\n1. Kiểu dữ liệu trong JavaScript Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình.\n","keywords":[],"articleBody":"Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.\nBài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.\n1. Kiểu dữ liệu trong JavaScript Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình.\nJavaScript hỗ trợ ba kiểu dữ liệu cơ bản sau:\nSố (Number): ví dụ 123, 120.50, … Chuỗi văn bản (String): ví dụ \"This text string\", \"Xin chào\", … Boolean: giá trị true hoặc false. Ngoài ra, JavaScript còn định nghĩa hai kiểu dữ liệu đặc biệt: null và undefined, mỗi kiểu chỉ chứa một giá trị duy nhất.\nBên cạnh đó, JavaScript hỗ trợ kiểu dữ liệu hỗn hợp gọi là object (đối tượng) – kiểu dữ liệu quan trọng nhất của ngôn ngữ này.\n💡 Ghi chú: JavaScript không phân biệt giữa số nguyên (integer) và số thực (floating-point).\nTất cả các số đều được biểu diễn bằng định dạng dấu chấm động 64 bit theo chuẩn IEEE 754.\n2. Khái niệm về Biến trong JavaScript Trong JavaScript, biến (variable) có thể hiểu là một “hộp chứa” có tên, dùng để lưu trữ dữ liệu.\nBạn có thể gán dữ liệu vào biến, sau đó truy cập lại chỉ bằng cách gọi tên biến đó.\nTrước khi sử dụng biến, bạn cần khai báo nó bằng từ khóa var như sau:\n\u003cscript type=\"text/javascript\"\u003e var money; var name; \u003c/script\u003e ","wordCount":"297","inLanguage":"en","datePublished":"2025-10-24T00:00:00Z","dateModified":"2025-10-24T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.org/posts/post1/"},"publisher":{"@type":"Organization","name":"Blog của tôi","logo":{"@type":"ImageObject","url":"https://example.org/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://example.org/ accesskey=h title="Blog của tôi (Alt + H)">Blog của tôi</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://example.org/profile/ title=Profile><span>Profile</span></a></li><li><a href=https://example.org/posts/ title="Bài Viết"><span>Bài Viết</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">Bài viết 1 - Biến trong JavaScript</h1><div class=post-meta><span title='2025-10-24 00:00:00 +0000 UTC'>October 24, 2025</span></div></header><div class=post-content><p>Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.<br>Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.</p><hr><h2 id=1-kiểu-dữ-liệu-trong-javascript>1. Kiểu dữ liệu trong JavaScript<a hidden class=anchor aria-hidden=true href=#1-kiểu-dữ-liệu-trong-javascript>#</a></h2><p>Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình.</p><p>JavaScript hỗ trợ ba kiểu dữ liệu cơ bản sau:</p><ul><li><strong>Số (Number):</strong> ví dụ <code>123</code>, <code>120.50</code>, …</li><li><strong>Chuỗi văn bản (String):</strong> ví dụ <code>"This text string"</code>, <code>"Xin chào"</code>, …</li><li><strong>Boolean:</strong> giá trị <code>true</code> hoặc <code>false</code>.</li></ul><p>Ngoài ra, JavaScript còn định nghĩa hai kiểu dữ liệu đặc biệt: <strong>null</strong> và <strong>undefined</strong>, mỗi kiểu chỉ chứa một giá trị duy nhất.<br>Bên cạnh đó, JavaScript hỗ trợ kiểu dữ liệu hỗn hợp gọi là <strong>object (đối tượng)</strong> – kiểu dữ liệu quan trọng nhất của ngôn ngữ này.</p><blockquote><p>💡 <strong>Ghi chú:</strong> JavaScript không phân biệt giữa số nguyên (integer) và số thực (floating-point).<br>Tất cả các số đều được biểu diễn bằng định dạng dấu chấm động 64 bit theo chuẩn <strong>IEEE 754</strong>.</p></blockquote><hr><h2 id=2-khái-niệm-về-biến-trong-javascript>2. Khái niệm về Biến trong JavaScript<a hidden class=anchor aria-hidden=true href=#2-khái-niệm-về-biến-trong-javascript>#</a></h2><p>Trong JavaScript, <strong>biến (variable)</strong> có thể hiểu là một “hộp chứa” có tên, dùng để lưu trữ dữ liệu.<br>Bạn có thể gán dữ liệu vào biến, sau đó truy cập lại chỉ bằng cách gọi tên biến đó.</p><p>Trước khi sử dụng biến, bạn cần <strong>khai báo</strong> nó bằng từ khóa <code>var</code> như sau:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
-</span></span><span style=display:flex><span>   <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>money</span>;
-</span></span><span style=display:flex><span>   <span style=color:#66d9ef>var</span> <span style=color:#a6e22e>name</span>;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>script</span>&gt;
-</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://example.org/>Blog của tôi</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blog của tôi (Alt + H)">Blog của tôi</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/profile/" title="Profile">
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Bài Viết">
+                    <span>Bài Viết</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Bài viết 1 - Biến trong JavaScript
+    </h1>
+    <div class="post-meta"><span title='2025-10-24 00:00:00 +0000 UTC'>October 24, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.<br>
+Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.</p>
+<hr>
+<h2 id="1-kiểu-dữ-liệu-trong-javascript">1. Kiểu dữ liệu trong JavaScript<a hidden class="anchor" aria-hidden="true" href="#1-kiểu-dữ-liệu-trong-javascript">#</a></h2>
+<p>Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình.</p>
+<p>JavaScript hỗ trợ ba kiểu dữ liệu cơ bản sau:</p>
+<ul>
+<li><strong>Số (Number):</strong> ví dụ <code>123</code>, <code>120.50</code>, …</li>
+<li><strong>Chuỗi văn bản (String):</strong> ví dụ <code>&quot;This text string&quot;</code>, <code>&quot;Xin chào&quot;</code>, …</li>
+<li><strong>Boolean:</strong> giá trị <code>true</code> hoặc <code>false</code>.</li>
+</ul>
+<p>Ngoài ra, JavaScript còn định nghĩa hai kiểu dữ liệu đặc biệt: <strong>null</strong> và <strong>undefined</strong>, mỗi kiểu chỉ chứa một giá trị duy nhất.<br>
+Bên cạnh đó, JavaScript hỗ trợ kiểu dữ liệu hỗn hợp gọi là <strong>object (đối tượng)</strong> – kiểu dữ liệu quan trọng nhất của ngôn ngữ này.</p>
+<blockquote>
+<p>💡 <strong>Ghi chú:</strong> JavaScript không phân biệt giữa số nguyên (integer) và số thực (floating-point).<br>
+Tất cả các số đều được biểu diễn bằng định dạng dấu chấm động 64 bit theo chuẩn <strong>IEEE 754</strong>.</p>
+</blockquote>
+<hr>
+<h2 id="2-khái-niệm-về-biến-trong-javascript">2. Khái niệm về Biến trong JavaScript<a hidden class="anchor" aria-hidden="true" href="#2-khái-niệm-về-biến-trong-javascript">#</a></h2>
+<p>Trong JavaScript, <strong>biến (variable)</strong> có thể hiểu là một “hộp chứa” có tên, dùng để lưu trữ dữ liệu.<br>
+Bạn có thể gán dữ liệu vào biến, sau đó truy cập lại chỉ bằng cách gọi tên biến đó.</p>
+<p>Trước khi sử dụng biến, bạn cần <strong>khai báo</strong> nó bằng từ khóa <code>var</code> như sau:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">money</span>;
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span>;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Blog của tôi</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

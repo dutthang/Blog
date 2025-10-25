@@ -1,44 +1,272 @@
-<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Bài viết 8 - Hàm trong JavaScript | Blog của tôi</title>
-<meta name=keywords content><meta name=description content="Hàm trong JavaScript
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Bài viết 8 - Hàm trong JavaScript | Blog của tôi</title>
+<meta name="keywords" content="">
+<meta name="description" content="Hàm trong JavaScript
 1. Khái niệm về hàm
 Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên gọn gàng, dễ quản lý, và dễ mở rộng hơn.
 2. Cách định nghĩa hàm
-Để sử dụng hàm, bạn phải định nghĩa nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh."><meta name=author content><link rel=canonical href=https://example.org/posts/post9/><link crossorigin=anonymous href=/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn+yY=" rel="preload stylesheet" as=style><link rel=icon href=https://example.org/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://example.org/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://example.org/favicon-32x32.png><link rel=apple-touch-icon href=https://example.org/apple-touch-icon.png><link rel=mask-icon href=https://example.org/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://example.org/posts/post9/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://example.org/posts/post9/"><meta property="og:site_name" content="Blog của tôi"><meta property="og:title" content="Bài viết 8 - Hàm trong JavaScript"><meta property="og:description" content="Hàm trong JavaScript 1. Khái niệm về hàm Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên gọn gàng, dễ quản lý, và dễ mở rộng hơn.
-2. Cách định nghĩa hàm Để sử dụng hàm, bạn phải định nghĩa nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh."><meta property="og:locale" content="en-us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-10-24T00:00:00+00:00"><meta property="article:modified_time" content="2025-10-24T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Bài viết 8 - Hàm trong JavaScript"><meta name=twitter:description content="Hàm trong JavaScript
-1. Khái niệm về hàm
-Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên gọn gàng, dễ quản lý, và dễ mở rộng hơn.
-2. Cách định nghĩa hàm
-Để sử dụng hàm, bạn phải định nghĩa nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://example.org/posts/"},{"@type":"ListItem","position":2,"name":"Bài viết 8 - Hàm trong JavaScript","item":"https://example.org/posts/post9/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Bài viết 8 - Hàm trong JavaScript","name":"Bài viết 8 - Hàm trong JavaScript","description":"Hàm trong JavaScript 1. Khái niệm về hàm Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên gọn gàng, dễ quản lý, và dễ mở rộng hơn.\n2. Cách định nghĩa hàm Để sử dụng hàm, bạn phải định nghĩa nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh.\n","keywords":[],"articleBody":"Hàm trong JavaScript 1. Khái niệm về hàm Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên gọn gàng, dễ quản lý, và dễ mở rộng hơn.\n2. Cách định nghĩa hàm Để sử dụng hàm, bạn phải định nghĩa nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh.\nCú pháp: function functionName(parameter1, parameter2, ...) { // các lệnh được thực thi khi hàm được gọi } Ví dụ đơn giản:\n\u003cscript type=\"text/javascript\"\u003e function sayHello() { alert(\"Hello there!\"); } \u003c/script\u003e 3. Gọi hàm Sau khi định nghĩa hàm, bạn chỉ cần gọi hàm bằng tên hàm và dấu ngoặc (). Ví dụ:\n\u003cscript type=\"text/javascript\"\u003e function sayHello() { document.write(\"Hello there!\"); } \u003c/script\u003e \u003cbody\u003e \u003cbutton onclick=\"sayHello()\"\u003eNhấn vào đây\u003c/button\u003e \u003c/body\u003e Khi người dùng nhấn nút, hàm sayHello() sẽ được thực thi.\n4. Tham số của hàm Hàm có thể nhận một hoặc nhiều tham số để xử lý dữ liệu đầu vào khác nhau — và từ đó có thể cho kết quả đầu ra khác. Ví dụ:\n\u003cscript type=\"text/javascript\"\u003e function sayHello(name, age) { document.write(name + \" is \" + age + \" years old.\"); } \u003c/script\u003e Trong ví dụ trên, hàm sayHello có hai tham số: name và age. Khi bạn gọi hàm với đối số thực tế khác nhau, kết quả sẽ khác nhau. VietJack\n5. Lệnh return Nếu bạn muốn hàm trả về một giá trị cho nơi gọi, bạn sử dụng từ khóa return. Khi return được gặp, hàm ngừng thực thi và trả giá trị theo sau nó (nếu có) ra ngoài. Ví dụ:\nfunction add(a, b) { return a + b; } var sum = add(5, 3); // sum sẽ là 8 Không có return thì hàm sẽ trả về undefined theo mặc định.\n6. Vai trò và lợi ích của hàm Tái sử dụng mã: Viết một lần, gọi nhiều lần.\nTổ chức chương trình theo module: Mỗi hàm đảm nhiệm một nhiệm vụ cụ thể.\nDễ bảo trì và phát triển: Khi cần thay đổi logic, chỉ sửa hàm mà không cần tìm khắp nơi.\nGiúp code rõ ràng, dễ đọc và dễ mở rộng.\n","wordCount":"409","inLanguage":"en","datePublished":"2025-10-24T00:00:00Z","dateModified":"2025-10-24T00:00:00Z","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.org/posts/post9/"},"publisher":{"@type":"Organization","name":"Blog của tôi","logo":{"@type":"ImageObject","url":"https://example.org/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://example.org/ accesskey=h title="Blog của tôi (Alt + H)">Blog của tôi</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)" aria-label="Toggle theme"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://example.org/profile/ title=Profile><span>Profile</span></a></li><li><a href=https://example.org/posts/ title="Bài Viết"><span>Bài Viết</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><h1 class="post-title entry-hint-parent">Bài viết 8 - Hàm trong JavaScript</h1><div class=post-meta><span title='2025-10-24 00:00:00 +0000 UTC'>October 24, 2025</span></div></header><div class=post-content><h1 id=hàm-trong-javascript>Hàm trong JavaScript<a hidden class=anchor aria-hidden=true href=#hàm-trong-javascript>#</a></h1><h2 id=1-khái-niệm-về-hàm>1. Khái niệm về hàm<a hidden class=anchor aria-hidden=true href=#1-khái-niệm-về-hàm>#</a></h2><p>Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên <strong>gọn gàng</strong>, <strong>dễ quản lý</strong>, và dễ mở rộng hơn.</p><h2 id=2-cách-định-nghĩa-hàm>2. Cách định nghĩa hàm<a hidden class=anchor aria-hidden=true href=#2-cách-định-nghĩa-hàm>#</a></h2><p>Để sử dụng hàm, bạn phải <strong>định nghĩa</strong> nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa <code>function</code>, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh.</p><h3 id=cú-pháp>Cú pháp:<a hidden class=anchor aria-hidden=true href=#cú-pháp>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>functionName</span>(<span style=color:#a6e22e>parameter1</span>, <span style=color:#a6e22e>parameter2</span>, ...) {
-</span></span><span style=display:flex><span>  <span style=color:#75715e>// các lệnh được thực thi khi hàm được gọi
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
-</span></span></code></pre></div><p>Ví dụ đơn giản:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>sayHello</span>() {
-</span></span><span style=display:flex><span>    <span style=color:#a6e22e>alert</span>(<span style=color:#e6db74>&#34;Hello there!&#34;</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>script</span>&gt;
-</span></span></code></pre></div><h2 id=3-gọi-hàm>3. Gọi hàm<a hidden class=anchor aria-hidden=true href=#3-gọi-hàm>#</a></h2><p>Sau khi định nghĩa hàm, bạn chỉ cần gọi hàm bằng tên hàm và dấu ngoặc (). Ví dụ:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>sayHello</span>() {
-</span></span><span style=display:flex><span>    document.<span style=color:#a6e22e>write</span>(<span style=color:#e6db74>&#34;Hello there!&#34;</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>script</span>&gt;
-</span></span><span style=display:flex><span>&lt;<span style=color:#f92672>body</span>&gt;
-</span></span><span style=display:flex><span>  &lt;<span style=color:#f92672>button</span> <span style=color:#a6e22e>onclick</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;sayHello()&#34;</span>&gt;Nhấn vào đây&lt;/<span style=color:#f92672>button</span>&gt;
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>body</span>&gt;
-</span></span></code></pre></div><p>Khi người dùng nhấn nút, hàm sayHello() sẽ được thực thi.</p><h2 id=4-tham-số-của-hàm>4. Tham số của hàm<a hidden class=anchor aria-hidden=true href=#4-tham-số-của-hàm>#</a></h2><p>Hàm có thể nhận một hoặc nhiều tham số để xử lý dữ liệu đầu vào khác nhau — và từ đó có thể cho kết quả đầu ra khác.
-Ví dụ:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>function</span> <span style=color:#a6e22e>sayHello</span>(<span style=color:#a6e22e>name</span>, <span style=color:#a6e22e>age</span>) {
-</span></span><span style=display:flex><span>    document.<span style=color:#a6e22e>write</span>(<span style=color:#a6e22e>name</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; is &#34;</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>age</span> <span style=color:#f92672>+</span> <span style=color:#e6db74>&#34; years old.&#34;</span>);
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>script</span>&gt;
+Để sử dụng hàm, bạn phải định nghĩa nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa function, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/post9/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a482bf00fa5c046040ef7973ad5fdf5657890cacb596c93f1382f664ca542074.css" integrity="sha256-pIK/APpcBGBA73lzrV/fVleJDKy1lsk/E4L2ZMpUIHQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/post9/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blog của tôi (Alt + H)">Blog của tôi</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/profile/" title="Profile">
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="Bài Viết">
+                    <span>Bài Viết</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Bài viết 8 - Hàm trong JavaScript
+    </h1>
+    <div class="post-meta"><span title='2025-10-24 00:00:00 +0000 UTC'>October 24, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="hàm-trong-javascript">Hàm trong JavaScript<a hidden class="anchor" aria-hidden="true" href="#hàm-trong-javascript">#</a></h1>
+<h2 id="1-khái-niệm-về-hàm">1. Khái niệm về hàm<a hidden class="anchor" aria-hidden="true" href="#1-khái-niệm-về-hàm">#</a></h2>
+<p>Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên <strong>gọn gàng</strong>, <strong>dễ quản lý</strong>, và dễ mở rộng hơn.</p>
+<h2 id="2-cách-định-nghĩa-hàm">2. Cách định nghĩa hàm<a hidden class="anchor" aria-hidden="true" href="#2-cách-định-nghĩa-hàm">#</a></h2>
+<p>Để sử dụng hàm, bạn phải <strong>định nghĩa</strong> nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa <code>function</code>, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh.</p>
+<h3 id="cú-pháp">Cú pháp:<a hidden class="anchor" aria-hidden="true" href="#cú-pháp">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">functionName</span>(<span style="color:#a6e22e">parameter1</span>, <span style="color:#a6e22e">parameter2</span>, ...) {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// các lệnh được thực thi khi hàm được gọi
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><p>Ví dụ đơn giản:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayHello</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Hello there!&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span></code></pre></div><h2 id="3-gọi-hàm">3. Gọi hàm<a hidden class="anchor" aria-hidden="true" href="#3-gọi-hàm">#</a></h2>
+<p>Sau khi định nghĩa hàm, bạn chỉ cần gọi hàm bằng tên hàm và dấu ngoặc (). Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayHello</span>() {
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#34;Hello there!&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">onclick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sayHello()&#34;</span>&gt;Nhấn vào đây&lt;/<span style="color:#f92672">button</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span></code></pre></div><p>Khi người dùng nhấn nút, hàm sayHello() sẽ được thực thi.</p>
+<h2 id="4-tham-số-của-hàm">4. Tham số của hàm<a hidden class="anchor" aria-hidden="true" href="#4-tham-số-của-hàm">#</a></h2>
+<p>Hàm có thể nhận một hoặc nhiều tham số để xử lý dữ liệu đầu vào khác nhau — và từ đó có thể cho kết quả đầu ra khác.
+Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayHello</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">age</span>) {
+</span></span><span style="display:flex;"><span>    document.<span style="color:#a6e22e">write</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; is &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; years old.&#34;</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
 </span></span></code></pre></div><p>Trong ví dụ trên, hàm sayHello có hai tham số: name và age. Khi bạn gọi hàm với đối số thực tế khác nhau, kết quả sẽ khác nhau.
-<code>VietJack</code></p><h2 id=5-lệnh-return>5. Lệnh return<a hidden class=anchor aria-hidden=true href=#5-lệnh-return>#</a></h2><p>Nếu bạn muốn hàm trả về một giá trị cho nơi gọi, bạn sử dụng từ khóa return. Khi return được gặp, hàm ngừng thực thi và trả giá trị theo sau nó (nếu có) ra ngoài.
-Ví dụ:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#66d9ef>function</span> <span style=color:#a6e22e>add</span>(<span style=color:#a6e22e>a</span>, <span style=color:#a6e22e>b</span>) {
-</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>a</span> <span style=color:#f92672>+</span> <span style=color:#a6e22e>b</span>;
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>sum</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>add</span>(<span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>3</span>);  <span style=color:#75715e>// sum sẽ là 8
-</span></span></span></code></pre></div><p>Không có return thì hàm sẽ trả về undefined theo mặc định.</p><h2 id=6-vai-trò-và-lợi-ích-của-hàm>6. Vai trò và lợi ích của hàm<a hidden class=anchor aria-hidden=true href=#6-vai-trò-và-lợi-ích-của-hàm>#</a></h2><ul><li><p>Tái sử dụng mã: Viết một lần, gọi nhiều lần.</p></li><li><p>Tổ chức chương trình theo module: Mỗi hàm đảm nhiệm một nhiệm vụ cụ thể.</p></li><li><p>Dễ bảo trì và phát triển: Khi cần thay đổi logic, chỉ sửa hàm mà không cần tìm khắp nơi.</p></li><li><p>Giúp code rõ ràng, dễ đọc và dễ mở rộng.</p></li></ul></div><footer class=post-footer><ul class=post-tags></ul></footer></article></main><footer class=footer><span>&copy; 2025 <a href=https://example.org/>Blog của tôi</a></span> ·
-<span>Powered by
-<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
-        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
+<code>VietJack</code></p>
+<h2 id="5-lệnh-return">5. Lệnh return<a hidden class="anchor" aria-hidden="true" href="#5-lệnh-return">#</a></h2>
+<p>Nếu bạn muốn hàm trả về một giá trị cho nơi gọi, bạn sử dụng từ khóa return. Khi return được gặp, hàm ngừng thực thi và trả giá trị theo sau nó (nếu có) ra ngoài.
+Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">3</span>);  <span style="color:#75715e">// sum sẽ là 8
+</span></span></span></code></pre></div><p>Không có return thì hàm sẽ trả về undefined theo mặc định.</p>
+<h2 id="6-vai-trò-và-lợi-ích-của-hàm">6. Vai trò và lợi ích của hàm<a hidden class="anchor" aria-hidden="true" href="#6-vai-trò-và-lợi-ích-của-hàm">#</a></h2>
+<ul>
+<li>
+<p>Tái sử dụng mã: Viết một lần, gọi nhiều lần.</p>
+</li>
+<li>
+<p>Tổ chức chương trình theo module: Mỗi hàm đảm nhiệm một nhiệm vụ cụ thể.</p>
+</li>
+<li>
+<p>Dễ bảo trì và phát triển: Khi cần thay đổi logic, chỉ sửa hàm mà không cần tìm khắp nơi.</p>
+</li>
+<li>
+<p>Giúp code rõ ràng, dễ đọc và dễ mở rộng.</p>
+</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Blog của tôi</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
