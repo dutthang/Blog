@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Blog của tôi</title><link>https://example.org/posts/</link><description>Recent content in Posts on Blog của tôi</description><generator>Hugo -- 0.146.0</generator><language>en-us</language><lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Bài viết 1 - Biến trong JavaScript</title><link>https://example.org/posts/post1/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post1/</guid><description>&lt;p>Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.&lt;br>
+Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.&lt;/p>
+&lt;hr>
+&lt;h2 id="1-kiểu-dữ-liệu-trong-javascript">1. Kiểu dữ liệu trong JavaScript&lt;/h2>
+&lt;p>Một trong những đặc trưng quan trọng nhất của một ngôn ngữ lập trình là tập hợp các kiểu dữ liệu mà ngôn ngữ đó hỗ trợ — tức là những loại giá trị có thể được biểu diễn và thao tác trong chương trình.&lt;/p></description></item><item><title>Bài viết 2 - Lệnh if…else trong JavaScript</title><link>https://example.org/posts/post2/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post2/</guid><description>&lt;h1 id="lệnh-ifelse-trong-javascript">Lệnh if…else trong JavaScript&lt;/h1>
+&lt;p>Trong khi viết chương trình, đôi khi bạn sẽ gặp tình huống cần chọn một trong nhiều lựa chọn. Khi đó bạn cần sử dụng cấu trúc điều kiện để điều khiển luồng thực thi của chương trình.&lt;/p>
+&lt;p>JavaScript cung cấp các lệnh điều kiện để thực hiện các hành động khác nhau dựa vào điều kiện. Hãy cùng tìm hiểu lệnh &lt;strong>if…else&lt;/strong>.&lt;/p>
+&lt;hr>
+&lt;h2 id="1-sơ-đồ-hoạt-động-của-ifelse">1. Sơ đồ hoạt động của if…else&lt;/h2>
+&lt;p>&lt;img alt="Profile cá nhân" loading="lazy" src="https://example.org/posts/post2/post2.jpg">&lt;/p></description></item><item><title>Bài viết 3 - Lệnh switch…case trong JavaScript</title><link>https://example.org/posts/post4/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post4/</guid><description>&lt;h1 id="lệnh-switchcase-trong-javascript">Lệnh switch…case trong JavaScript&lt;/h1>
+&lt;h2 id="1-khi-nào-nên-dùng-switchcase">1. Khi nào nên dùng switch…case?&lt;/h2>
+&lt;p>Khi bạn có nhiều nhánh lựa chọn dựa vào cùng một biến hoặc cùng một biểu thức, việc sử dụng nhiều lệnh &lt;code>if…else if…else&lt;/code> sẽ trở nên dài và khó quản lý.&lt;br>
+Từ JavaScript 1.2 trở đi, lệnh &lt;code>switch&lt;/code> được giới thiệu để xử lý những trường hợp như vậy&lt;/p>
+&lt;h2 id="profile-cá-nhân">&lt;img alt="Profile cá nhân" loading="lazy" src="https://example.org/posts/post4/post3.jpg">&lt;/h2>
+&lt;h2 id="2-cú-pháp-cơ-bản">2. Cú pháp cơ bản&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">switch&lt;/span> (&lt;span style="color:#a6e22e">expression&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#a6e22e">condition1&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// các lệnh thực thi nếu expression == condition1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#a6e22e">condition2&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// các lệnh nếu expression == condition2
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// … bạn có thể có nhiều case…
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">default&lt;/span>&lt;span style="color:#f92672">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// các lệnh nếu không có case nào trùng với expression
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Giải thích:&lt;/p></description></item><item><title>Bài viết 4 - Vòng lặp while trong JavaScript</title><link>https://example.org/posts/post5/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post5/</guid><description>&lt;h1 id="vòng-lặp-while-trong-javascript">Vòng lặp while trong JavaScript&lt;/h1>
+&lt;h2 id="1-giới-thiệu">1. Giới thiệu&lt;/h2>
+&lt;p>Vòng lặp &lt;code>while&lt;/code> trong JavaScript cho phép bạn &lt;strong>lặp lại một khối lệnh&lt;/strong> miễn là điều kiện được chỉ định là đúng (&lt;code>true&lt;/code>).&lt;br>
+Khi điều kiện trở thành sai (&lt;code>false&lt;/code>), vòng lặp sẽ dừng lại.&lt;/p>
+&lt;hr>
+&lt;h2 id="2-cú-pháp">2. Cú pháp&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">while&lt;/span> (&lt;span style="color:#a6e22e">điều_kiện&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// khối lệnh sẽ thực hiện nếu điều_kiện đúng
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Giải thích:&lt;/p>
+&lt;p>Trước khi mỗi vòng lặp được thực hiện, JavaScript sẽ kiểm tra điều kiện.&lt;/p></description></item><item><title>Bài viết 5 - Vòng lặp for trong JavaScript</title><link>https://example.org/posts/post6/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post6/</guid><description>&lt;h1 id="vòng-lặp-for-trong-javascript">Vòng lặp for trong JavaScript&lt;/h1>
+&lt;h2 id="1-khi-nào-nên-dùng-vòng-lặp-for">1. Khi nào nên dùng vòng lặp for?&lt;/h2>
+&lt;p>Khi bạn biết trước &lt;strong>số lần lặp&lt;/strong> hoặc có thể xác định một giá trị khởi tạo, điều kiện và bước tăng/giảm rõ ràng, thì sử dụng vòng lặp &lt;code>for&lt;/code> là lựa chọn hiệu quả.&lt;br>
+&lt;img alt="Profile cá nhân" loading="lazy" src="https://example.org/posts/post6/post5.jpg">&lt;/p>
+&lt;h2 id="2-cú-pháp-cơ-bản">2. Cú pháp cơ bản&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#a6e22e">khởiTạo&lt;/span>; &lt;span style="color:#a6e22e">điềuKiện&lt;/span>; &lt;span style="color:#a6e22e">cậpNhật&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// khối lệnh sẽ thực hiện mỗi lần lặp
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Trong đó:&lt;/p></description></item><item><title>Bài viết 6 - Vòng lặp for…in trong JavaScript</title><link>https://example.org/posts/post7/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post7/</guid><description>&lt;h1 id="vòng-lặp-forin-trong-javascript">Vòng lặp for…in trong JavaScript&lt;/h1>
+&lt;h2 id="1-khi-nào-dùng-forin">1. Khi nào dùng &lt;code>for…in&lt;/code>?&lt;/h2>
+&lt;p>Vòng lặp &lt;code>for…in&lt;/code> được sử dụng để &lt;strong>lặp qua các thuộc tính của một đối tượng (object)&lt;/strong> hoặc các chỉ mục (index) của một mảng. Khi bạn đã hiểu rõ đối tượng trong JavaScript thì &lt;code>for…in&lt;/code> là công cụ rất hữu ích.&lt;/p>
+&lt;hr>
+&lt;h2 id="2-cú-pháp">2. Cú pháp&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-js" data-lang="js">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> (&lt;span style="color:#a6e22e">variablename&lt;/span> &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#a6e22e">object&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// khối lệnh sẽ được thực thi
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Ở mỗi lần lặp:&lt;/p></description></item><item><title>Bài viết 7 - Điều khiển vòng lặp với break &amp; continue trong JavaScript</title><link>https://example.org/posts/post8/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post8/</guid><description>&lt;h1 id="điều-khiển-vòng-lặp-với-break--continue-trong-javascript">Điều khiển vòng lặp với &lt;code>break&lt;/code> &amp;amp; &lt;code>continue&lt;/code> trong JavaScript&lt;/h1>
+&lt;h2 id="1-giới-thiệu">1. Giới thiệu&lt;/h2>
+&lt;p>Khi làm việc với vòng lặp trong JavaScript, bạn đôi khi cần:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Thoát khỏi vòng lặp ngay lập tức&lt;/strong> mà không tiếp tục các lần lặp còn lại.&lt;/li>
+&lt;li>&lt;strong>Bỏ qua&lt;/strong> phần thân hiện tại của vòng lặp và “nhảy” tới lần lặp tiếp theo.&lt;/li>
+&lt;/ul>
+&lt;p>Để xử lý những tình huống này, JavaScript cung cấp hai lệnh: &lt;code>break&lt;/code> và &lt;code>continue&lt;/code>.&lt;/p></description></item><item><title>Bài viết 8 - Hàm trong JavaScript</title><link>https://example.org/posts/post9/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post9/</guid><description>&lt;h1 id="hàm-trong-javascript">Hàm trong JavaScript&lt;/h1>
+&lt;h2 id="1-khái-niệm-về-hàm">1. Khái niệm về hàm&lt;/h2>
+&lt;p>Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên &lt;strong>gọn gàng&lt;/strong>, &lt;strong>dễ quản lý&lt;/strong>, và dễ mở rộng hơn.&lt;/p>
+&lt;h2 id="2-cách-định-nghĩa-hàm">2. Cách định nghĩa hàm&lt;/h2>
+&lt;p>Để sử dụng hàm, bạn phải &lt;strong>định nghĩa&lt;/strong> nó trước. Một cách phổ biến để định nghĩa hàm trong JavaScript là sử dụng từ khóa &lt;code>function&lt;/code>, theo sau là tên hàm, danh sách tham số (có thể trống), và thân hàm chứa các câu lệnh.&lt;/p></description></item><item><title>Bài viết 9 - Sự kiện trong JavaScript</title><link>https://example.org/posts/post10/</link><pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate><guid>https://example.org/posts/post10/</guid><description>&lt;h1 id="sự-kiện-trong-javascript">Sự kiện trong JavaScript&lt;/h1>
+&lt;h2 id="1-sự-kiện-là-gì">1. Sự kiện là gì?&lt;/h2>
+&lt;p>Sự kiện (event) trong JavaScript là &lt;strong>những tương tác&lt;/strong> mà người dùng hoặc trình duyệt thực hiện trên một trang web — ví dụ như tải trang, click chuột, nhập phím, thay đổi kích thước, v.v. Khi một sự kiện xảy ra, JavaScript có thể &lt;strong>lắng nghe&lt;/strong> và &lt;strong>phản hồi&lt;/strong> bằng các hàm xử lý tương ứng.
+Các phần tử HTML (khi được trình duyệt chuyển thành DOM) &lt;strong>chứa một tập hợp các sự kiện&lt;/strong> mà bạn có thể gắn hàm xử lý.g&lt;/p></description></item></channel></rss>
