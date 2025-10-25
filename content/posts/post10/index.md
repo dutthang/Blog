@@ -8,7 +8,7 @@ draft: false
 
 ## 1. Sự kiện là gì?  
 Sự kiện (event) trong JavaScript là **những tương tác** mà người dùng hoặc trình duyệt thực hiện trên một trang web — ví dụ như tải trang, click chuột, nhập phím, thay đổi kích thước, v.v. Khi một sự kiện xảy ra, JavaScript có thể **lắng nghe** và **phản hồi** bằng các hàm xử lý tương ứng.
-Các phần tử HTML (khi được trình duyệt chuyển thành DOM) **chứa một tập hợp các sự kiện** mà bạn có thể gắn hàm xử lý.g
+Các phần tử HTML (khi được trình duyệt chuyển thành DOM) **chứa một tập hợp các sự kiện** mà bạn có thể gắn hàm xử lý.
 
 ---
 

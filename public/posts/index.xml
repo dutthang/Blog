@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Blog của tôi</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Blog của tôi</description>
+    <title>Posts on Blog</title>
+    <link>http://localhost:1313/blog/posts/</link>
+    <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- 0.152.1</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Oct 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bài viết 1 - Biến trong JavaScript</title>
-      <link>http://localhost:1313/posts/post1/</link>
+      <link>http://localhost:1313/blog/posts/post1/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post1/</guid>
+      <guid>http://localhost:1313/blog/posts/post1/</guid>
       <description>&lt;p&gt;Biến trong JavaScript là một trong những phần cơ bản nhất của ngôn ngữ, cho phép bạn lưu trữ và thao tác với dữ liệu trong chương trình.&lt;br&gt;
 Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, cách khai báo biến, phạm vi biến và quy tắc đặt tên trong JavaScript.&lt;/p&gt;
 &lt;hr&gt;
@@ -21,26 +21,26 @@ Bài viết này sẽ giúp bạn hiểu rõ hơn về các kiểu dữ liệu, 
     </item>
     <item>
       <title>Bài viết 2 - Lệnh if…else trong JavaScript</title>
-      <link>http://localhost:1313/posts/post2/</link>
+      <link>http://localhost:1313/blog/posts/post2/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post2/</guid>
+      <guid>http://localhost:1313/blog/posts/post2/</guid>
       <description>&lt;h1 id=&#34;lệnh-ifelse-trong-javascript&#34;&gt;Lệnh if…else trong JavaScript&lt;/h1&gt;
 &lt;p&gt;Trong khi viết chương trình, đôi khi bạn sẽ gặp tình huống cần chọn một trong nhiều lựa chọn. Khi đó bạn cần sử dụng cấu trúc điều kiện để điều khiển luồng thực thi của chương trình.&lt;/p&gt;
 &lt;p&gt;JavaScript cung cấp các lệnh điều kiện để thực hiện các hành động khác nhau dựa vào điều kiện. Hãy cùng tìm hiểu lệnh &lt;strong&gt;if…else&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;1-sơ-đồ-hoạt-động-của-ifelse&#34;&gt;1. Sơ đồ hoạt động của if…else&lt;/h2&gt;
-&lt;p&gt;&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/post2/post2.jpg&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/posts/post2/post2.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bài viết 3 - Lệnh switch…case trong JavaScript</title>
-      <link>http://localhost:1313/posts/post4/</link>
+      <link>http://localhost:1313/blog/posts/post4/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post4/</guid>
+      <guid>http://localhost:1313/blog/posts/post4/</guid>
       <description>&lt;h1 id=&#34;lệnh-switchcase-trong-javascript&#34;&gt;Lệnh switch…case trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khi-nào-nên-dùng-switchcase&#34;&gt;1. Khi nào nên dùng switch…case?&lt;/h2&gt;
 &lt;p&gt;Khi bạn có nhiều nhánh lựa chọn dựa vào cùng một biến hoặc cùng một biểu thức, việc sử dụng nhiều lệnh &lt;code&gt;if…else if…else&lt;/code&gt; sẽ trở nên dài và khó quản lý.&lt;br&gt;
 Từ JavaScript 1.2 trở đi, lệnh &lt;code&gt;switch&lt;/code&gt; được giới thiệu để xử lý những trường hợp như vậy&lt;/p&gt;
-&lt;h2 id=&#34;profile-cá-nhân&#34;&gt;&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/post4/post3.jpg&#34;&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;profile-cá-nhân&#34;&gt;&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/posts/post4/post3.jpg&#34;&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;2-cú-pháp-cơ-bản&#34;&gt;2. Cú pháp cơ bản&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;switch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;expression&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;condition1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt;
@@ -60,9 +60,9 @@ Từ JavaScript 1.2 trở đi, lệnh &lt;code&gt;switch&lt;/code&gt; được g
     </item>
     <item>
       <title>Bài viết 4 - Vòng lặp while trong JavaScript</title>
-      <link>http://localhost:1313/posts/post5/</link>
+      <link>http://localhost:1313/blog/posts/post5/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post5/</guid>
+      <guid>http://localhost:1313/blog/posts/post5/</guid>
       <description>&lt;h1 id=&#34;vòng-lặp-while-trong-javascript&#34;&gt;Vòng lặp while trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-giới-thiệu&#34;&gt;1. Giới thiệu&lt;/h2&gt;
 &lt;p&gt;Vòng lặp &lt;code&gt;while&lt;/code&gt; trong JavaScript cho phép bạn &lt;strong&gt;lặp lại một khối lệnh&lt;/strong&gt; miễn là điều kiện được chỉ định là đúng (&lt;code&gt;true&lt;/code&gt;).&lt;br&gt;
@@ -77,13 +77,13 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     </item>
     <item>
       <title>Bài viết 5 - Vòng lặp for trong JavaScript</title>
-      <link>http://localhost:1313/posts/post6/</link>
+      <link>http://localhost:1313/blog/posts/post6/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post6/</guid>
+      <guid>http://localhost:1313/blog/posts/post6/</guid>
       <description>&lt;h1 id=&#34;vòng-lặp-for-trong-javascript&#34;&gt;Vòng lặp for trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khi-nào-nên-dùng-vòng-lặp-for&#34;&gt;1. Khi nào nên dùng vòng lặp for?&lt;/h2&gt;
 &lt;p&gt;Khi bạn biết trước &lt;strong&gt;số lần lặp&lt;/strong&gt; hoặc có thể xác định một giá trị khởi tạo, điều kiện và bước tăng/giảm rõ ràng, thì sử dụng vòng lặp &lt;code&gt;for&lt;/code&gt; là lựa chọn hiệu quả.&lt;br&gt;
-&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/posts/post6/post5.jpg&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;Profile cá nhân&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/blog/posts/post6/post5.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;2-cú-pháp-cơ-bản&#34;&gt;2. Cú pháp cơ bản&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;khởiTạo&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;điềuKiện&lt;/span&gt;; &lt;span style=&#34;color:#a6e22e&#34;&gt;cậpNhật&lt;/span&gt;) {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;// khối lệnh sẽ thực hiện mỗi lần lặp
@@ -92,9 +92,9 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     </item>
     <item>
       <title>Bài viết 6 - Vòng lặp for…in trong JavaScript</title>
-      <link>http://localhost:1313/posts/post7/</link>
+      <link>http://localhost:1313/blog/posts/post7/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post7/</guid>
+      <guid>http://localhost:1313/blog/posts/post7/</guid>
       <description>&lt;h1 id=&#34;vòng-lặp-forin-trong-javascript&#34;&gt;Vòng lặp for…in trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khi-nào-dùng-forin&#34;&gt;1. Khi nào dùng &lt;code&gt;for…in&lt;/code&gt;?&lt;/h2&gt;
 &lt;p&gt;Vòng lặp &lt;code&gt;for…in&lt;/code&gt; được sử dụng để &lt;strong&gt;lặp qua các thuộc tính của một đối tượng (object)&lt;/strong&gt; hoặc các chỉ mục (index) của một mảng. Khi bạn đã hiểu rõ đối tượng trong JavaScript thì &lt;code&gt;for…in&lt;/code&gt; là công cụ rất hữu ích.&lt;/p&gt;
@@ -107,9 +107,9 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     </item>
     <item>
       <title>Bài viết 7 - Điều khiển vòng lặp với break &amp; continue trong JavaScript</title>
-      <link>http://localhost:1313/posts/post8/</link>
+      <link>http://localhost:1313/blog/posts/post8/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post8/</guid>
+      <guid>http://localhost:1313/blog/posts/post8/</guid>
       <description>&lt;h1 id=&#34;điều-khiển-vòng-lặp-với-break--continue-trong-javascript&#34;&gt;Điều khiển vòng lặp với &lt;code&gt;break&lt;/code&gt; &amp;amp; &lt;code&gt;continue&lt;/code&gt; trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-giới-thiệu&#34;&gt;1. Giới thiệu&lt;/h2&gt;
 &lt;p&gt;Khi làm việc với vòng lặp trong JavaScript, bạn đôi khi cần:&lt;/p&gt;
@@ -121,9 +121,9 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     </item>
     <item>
       <title>Bài viết 8 - Hàm trong JavaScript</title>
-      <link>http://localhost:1313/posts/post9/</link>
+      <link>http://localhost:1313/blog/posts/post9/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post9/</guid>
+      <guid>http://localhost:1313/blog/posts/post9/</guid>
       <description>&lt;h1 id=&#34;hàm-trong-javascript&#34;&gt;Hàm trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-khái-niệm-về-hàm&#34;&gt;1. Khái niệm về hàm&lt;/h2&gt;
 &lt;p&gt;Một hàm (function) là một nhóm mã (code) có thể tái sử dụng trong chương trình của bạn — bạn chỉ cần định nghĩa một lần và sau đó gọi nhiều lần. Việc dùng hàm giúp chương trình trở nên &lt;strong&gt;gọn gàng&lt;/strong&gt;, &lt;strong&gt;dễ quản lý&lt;/strong&gt;, và dễ mở rộng hơn.&lt;/p&gt;
@@ -132,13 +132,13 @@ Khi điều kiện trở thành sai (&lt;code&gt;false&lt;/code&gt;), vòng lặ
     </item>
     <item>
       <title>Bài viết 9 - Sự kiện trong JavaScript</title>
-      <link>http://localhost:1313/posts/post10/</link>
+      <link>http://localhost:1313/blog/posts/post10/</link>
       <pubDate>Fri, 24 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/post10/</guid>
+      <guid>http://localhost:1313/blog/posts/post10/</guid>
       <description>&lt;h1 id=&#34;sự-kiện-trong-javascript&#34;&gt;Sự kiện trong JavaScript&lt;/h1&gt;
 &lt;h2 id=&#34;1-sự-kiện-là-gì&#34;&gt;1. Sự kiện là gì?&lt;/h2&gt;
 &lt;p&gt;Sự kiện (event) trong JavaScript là &lt;strong&gt;những tương tác&lt;/strong&gt; mà người dùng hoặc trình duyệt thực hiện trên một trang web — ví dụ như tải trang, click chuột, nhập phím, thay đổi kích thước, v.v. Khi một sự kiện xảy ra, JavaScript có thể &lt;strong&gt;lắng nghe&lt;/strong&gt; và &lt;strong&gt;phản hồi&lt;/strong&gt; bằng các hàm xử lý tương ứng.
-Các phần tử HTML (khi được trình duyệt chuyển thành DOM) &lt;strong&gt;chứa một tập hợp các sự kiện&lt;/strong&gt; mà bạn có thể gắn hàm xử lý.g&lt;/p&gt;</description>
+Các phần tử HTML (khi được trình duyệt chuyển thành DOM) &lt;strong&gt;chứa một tập hợp các sự kiện&lt;/strong&gt; mà bạn có thể gắn hàm xử lý.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
