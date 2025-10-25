@@ -13,3 +13,6 @@ theme = "PaperMod"
     name = "Bài Viết"
     url = "/posts/"
     weight = 20
+
+[params.analytics]
+disable = true
