@@ -85,11 +85,11 @@ Ví dụ
 Kết quả sẽ là:
 ```rust
 Does not qualify for driving
-
+```
 ## 5. Lệnh if…else if…
 
 Khi bạn cần kiểm tra nhiều điều kiện tuần tự, bạn sử dụng if…else if….
-```
+
 Cú pháp
 ```js
 if (expression1) {

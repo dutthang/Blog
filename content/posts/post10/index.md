@@ -31,7 +31,7 @@ Các phần tử HTML (khi được trình duyệt chuyển thành DOM) **chứa
     <input type="button" onclick="sayHello()" value="Xin chào!" />
   </body>
 </html>
-``` :contentReference[oaicite:3]{index=3}
+``` 
 
 ### **onsubmit**  
 Được kích hoạt khi người dùng submit (gửi) một form. Bạn có thể kiểm tra form trước khi gửi bằng cách gắn hàm xử lý cho sự kiện này.
@@ -84,7 +84,7 @@ Các phần tử HTML (khi được trình duyệt chuyển thành DOM) **chứa
 ---
 
 ## 3. Sự kiện trong HTML5 chuẩn  
-HTML5 mở rộng thêm rất nhiều loại sự kiện mới để xử lý tương tác và trạng thái của trang web — như `onload`, `onresize`, `onoffline`, `ononline`, `onstorage` và nhiều hơn nữa. :contentReference[oaicite:6]{index=6}  
+HTML5 mở rộng thêm rất nhiều loại sự kiện mới để xử lý tương tác và trạng thái của trang web — như `onload`, `onresize`, `onoffline`, `ononline`, `onstorage` và nhiều hơn nữa.   
 Bạn nên tìm hiểu thêm khi lập trình ở mức nâng cao hoặc xây dựng ứng dụng web tương tác mạnh.
 
 ---

@@ -1,6 +1,6 @@
 baseURL = "https://dutthanq.github.io/blog/"
 languageCode = 'en-us'
-title = 'Blog của tôi'
+title = 'Blog'
 theme = "PaperMod"
 [menu]
   [[menu.main]]

@@ -84,8 +84,7 @@ Kết quả khi grade = 'A':
 Entering switch block
 Good job
 Exiting switch block
-``` :contentReference[oaicite:4]{index=4}
-```
+``` 
 ---
 
 ## 4. Fall-through (Khi không dùng break)
@@ -111,7 +110,6 @@ Nếu bạn bỏ qua việc sử dụng `break`, thì khi tìm được case ph�
 ```
 
 Trường hợp này sẽ in nhiều dòng, kể cả các thông báo ở case 'A', case 'B', case 'C', rồi tới default. 
-VietJack
 
 ## 5. Những lưu ý quan trọng
 
