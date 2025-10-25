@@ -1,0 +1,15 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Blog của tôi'
+theme = "PaperMod"
+[menu]
+  [[menu.main]]
+    identifier = "profile"
+    name = "Profile"
+    url = "/profile/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Bài Viết"
+    url = "/posts/"
+    weight = 20
